@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
 import '../style/Home.css'
 import ClientFeedback from './ClientFeedback'
-import digitalmarketing from '../images/digitalmarketing.png';
-import webdevelopment from '../images/webdevelopment.jpg';
-import background from '../images/webdevelopment.jpg';
-import home from '../images/Home.png';
+import digitalmarketing from '../images/digitalmarketing.webp';
+import webdevelopment from '../images/webdevelopment.webp';
+import home from '../images/Home.webp';
 import ContactSection from './ContactSection ';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { useMyContext } from '../context/MyContext'
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import ScrollToTop from './ScrollToTop';
 
 function Home() { 
 
@@ -64,6 +64,7 @@ function Home() {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Navbar/>
+      <ScrollToTop/>
         <section className='top_section' style={{backgroundImage:`url("${home}")`}}>
             <div className='hts_1'>
                 <h1>Innovating Your Future, One Step at a Time</h1>

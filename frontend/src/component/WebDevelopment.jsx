@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import '../style/WebDevelopment.css'
-import webd from '../images/webd.jpg'
-import webdevep from '../images/webdevep.jpeg'
-import webhome from '../images/webhome.png'
+import webd from '../images/webd.webp'
+import webdevep from '../images/webdevep.webp'
+import webhome from '../images/webhome.webp'
 import ecomm1 from '../images/e-comm1.png'
 import custom1 from '../images/custom1.png'
 import port1 from '../images/port1.png'
@@ -13,6 +13,7 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import { useMyContext } from '../context/MyContext'
 import { useNavigate } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 
 function WebDevelopment() {
    const { setIsScrolled } = useMyContext()
@@ -104,6 +105,7 @@ function WebDevelopment() {
   return (
     <div>
         <Navbar/>
+        <ScrollToTop/>
         <section className='wd_top_section' style={{backgroundImage:`url("${webhome}")`}}>
             <h1>Elegant Web Solutions for Your Business</h1>
             <p>Transform your digital presence with expertly crafted websites, including custom designs, e-commerce platforms, and portfolio showcases. Tailored to your needs, our web solutions help your brand stand out and thrive online.</p>

@@ -9,6 +9,7 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import { useMyContext } from '../context/MyContext'
 import { useNavigate } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 
 function DigitalMarketing() {
   const { setIsScrolled, setSelected } = useMyContext()
@@ -63,6 +64,7 @@ function DigitalMarketing() {
   return (
     <div>
       <Navbar />
+      <ScrollToTop/>
       <section className='wd_top_section' style={{backgroundImage:`url("${digihome11}")`}}>
         <h1>Supercharge Your Business Growth with Expert Digital Marketing Solutions</h1>
         <p>Transform your digital presence with Innoverse Digital Solutions. Our tailored strategies in SEO, social media marketing, PPC, and more are designed to help your business thrive online. Whether you want to boost your search engine rankings, engage with your audience on social platforms, or drive targeted traffic through paid ads, we create impactful solutions that deliver measurable results. Let us help you turn clicks into loyal customers and drive consistent growth for your business.</p>

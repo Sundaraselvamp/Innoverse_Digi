@@ -8,6 +8,7 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import { useMyContext } from '../context/MyContext'
 import { useNavigate } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 
 function DataAnalytics() {
     
@@ -35,6 +36,7 @@ function DataAnalytics() {
   return (
     <div>
         <Navbar/>
+        <ScrollToTop/>
         <section className='wd_top_section' style={{backgroundImage:`url("${datahome1}")`}}>
             <h1>Unlock the Power of Data Analytics for Your Business</h1>
             <p>Leverage advanced data analytics solutions to transform your business insights into actionable strategies. At Innoverse Digital Solutions, we empower you with customized analytics tools to make smarter decisions, drive growth, and achieve lasting success. Turn data into your competitive advantage today.</p>
