@@ -93,7 +93,7 @@
 }
 
 .ds-image {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   border-radius: 8px;
 }
@@ -109,7 +109,7 @@
 
 .dms-content {
   flex: 1;
-  max-width: 600px;
+  max-width: 900px;
   padding-right: 2rem;
 }
 
@@ -144,7 +144,7 @@
 }
 
 .dms-decorative-image {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 8px;
 }

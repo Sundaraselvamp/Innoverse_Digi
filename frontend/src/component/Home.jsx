@@ -53,15 +53,29 @@ function Home() {
   return (
     <div className='home_main'>
        <Helmet>
-        <title>Home - Innoverse Digital Services</title>
-        <meta name="description" content="Discover how Innoverse Digital Services can elevate your business with cutting-edge web development, powerful digital marketing strategies, and actionable data insights." />
-        <meta name="keywords" content="web development, digital marketing, data analytics, Tamil Nadu, Innoverse Digital Services" />
+        <title>Web Development & Digital Marketing in Tamil Nadu - Innoverse</title>
+        <meta name="description" content="Expert web development and digital marketing services in Tamil Nadu. Elevate your business with cutting-edge solutions from Innoverse Digital Services." />
+        <meta name="keywords" content="web development Tamil Nadu, digital marketing Tamil Nadu, data analytics services Tamil Nadu, Innoverse Digital Services" />
         <meta name="author" content="Innoverse Digital Solutions" />
-        <meta property="og:title" content="Home - Innoverse Digital Services" />
-        <meta property="og:description" content="Innovating Your Future, One Step at a Time. Discover how Innoverse Digital Services can elevate your business." />
-        <meta property="og:image" content={home} />
-        <meta property="og:url" content="https://yourdomain.com/home" />
+        <meta property="og:title" content="Web Development & Digital Marketing in Tamil Nadu - Innoverse" />
+        <meta property="og:description" content="Expert web development and digital marketing services tailored for businesses across Tamil Nadu. Partner with Innoverse Digital Services to grow your business." />
+        <meta property="og:image" content="https://innoversedigital.in/assets/logo.png" />
+        <meta property="og:url" content="https://innoversedigital.in/" />
+        <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Web Development & Digital Marketing in Tamil Nadu - Innoverse"
+        />
+        <meta
+          name="twitter:description"
+          content="Discover expert web development and digital marketing services in Tamil Nadu with Innoverse Digital Services."
+        />
+        <meta
+          name="twitter:image"
+          content="https://innoversedigital.in/assets/logo.png"
+        />
+        <link rel="canonical" href="https://innoversedigital.in/" />
       </Helmet>
       <Navbar/>
       <ScrollToTop/>

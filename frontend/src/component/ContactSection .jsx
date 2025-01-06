@@ -51,8 +51,8 @@ const ContactSection = () => {
         <div className="contact-info">
           <h3>Contact Us Now and Start Your Journey!</h3>
           <p><strong>Phone:</strong> +91 9786343389</p>
-          <p><strong>Email:</strong> info.innoversedigitals@gmail.com</p>
-          <p><strong>Address:</strong> 12/24, Palayakara Street, Porur, Chennai-600116</p>
+          <p><strong>Email:</strong> info@innoversedigital.in</p>
+          <p><strong>Address:</strong> 12/27, Palayakara Street, Porur, Chennai-600116</p>
         </div>
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">

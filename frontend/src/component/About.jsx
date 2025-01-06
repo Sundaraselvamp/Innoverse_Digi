@@ -1,19 +1,19 @@
 import React from "react";
 import "../style/About.css";
-import heroImage from "../images/about.png"; // Replace with your hero image
+import heroImage from "../images/about2.webp"; // Replace with your hero image
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
-import webhome4 from '../images/webhome4.webp'
-import webhome2 from '../images/webhome2.webp'
 import ScrollToTop from "./ScrollToTop";
-function About() {
 
-  const navigate = useNavigate()
+function About() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <Navbar />
-      <ScrollToTop/>
+      <ScrollToTop />
+      {/* Hero Section */}
       <section
         className="about-hero"
         style={{
@@ -34,6 +34,8 @@ function About() {
           </p>
         </div>
       </section>
+
+      {/* About Section */}
       <section className="about-section">
         <h2>Who We Are</h2>
         <p>
@@ -43,6 +45,7 @@ function About() {
           of the digital landscape to empower businesses like yours.
         </p>
       </section>
+
       <section className="about-section">
         <h2>Our Unique Selling Proposition</h2>
         <p>
@@ -68,6 +71,7 @@ function About() {
           </li>
         </ul>
       </section>
+
       <section className="about-section">
         <h2>What We Do</h2>
         <ul>
@@ -86,6 +90,7 @@ function About() {
           </li>
         </ul>
       </section>
+
       <section className="about-section">
         <h2>Why Choose Us?</h2>
         <p>
@@ -105,52 +110,38 @@ function About() {
           committed to exceeding your expectations.
         </p>
       </section>
-      
+
+      {/* Mission and Vision Section */}
       <div className="mission-vision-wrapper">
-            <div className="mission-section">
-                <div className="mission-image">
-                    <img src={webhome2} alt="Mission" />
-                </div>
-                <div className="mission-content">
-                    <h2>Our Mission</h2>
-                    <p>
-                        To provide class leading end-to-end IT solutions, leveraging offerings 
-                        from industry leaders such as IBM and Cisco, that enable our customers 
-                        to achieve their business goals. At GBM we will always strive to provide 
-                        exceptional value to our customers and will always be willing to go the 
-                        extra mile for them. We will always employ great people and aspire to provide 
-                        the best possible environment to innovate, grow and learn.
-                    </p>
-                </div>
-            </div>
-
-            <div className="vision-section">
-                <div className="vision-content">
-                    <h2>Our Vision</h2>
-                    <p>
-                        To be viewed by our customers as the partner with the most critical role 
-                        for their future success. To become as fundamental to the future success 
-                        of our customers as they are to ours.
-                    </p>
-                </div>
-                <div className="vision-image">
-                    <img src={webhome4} alt="Vision" />
-                </div>
-            </div>
+        <div className="mission-vision-content mission">
+          <h2>Our Mission</h2>
+          <p>
+            To empower businesses in Tamil Nadu and beyond with seamless, stress-free digital marketing and IT development solutions, driving growth, innovation, and lasting success.
+          </p>
         </div>
-
+        <div className="mission-vision-content vision">
+          <h2>Our Vision</h2>
+          <p>
+            To be recognized as the most reliable partner for businesses, offering unparalleled value and transforming marketing into a worry-free experience.
+          </p>
+        </div>
+      </div>
 
       {/* Call to Action Section */}
       <section className="about-section">
         <h2>Let Us Help You Grow!</h2>
         <p>
-            Let us take the stress out of marketing so you can focus on building the business of your dreams. Contact us today and let’s grow together!
+          Let us take the stress out of marketing so you can focus on building
+          the business of your dreams. Contact us today and let’s grow together!
         </p>
-        </section>
-        <div className='wd_end'>
-            <p>Let us help you transform your online presence and achieve real, measurable results with solutions that are as unique as your business. </p>
-             <button onClick={()=>{navigate("/contact")}}>contact us</button>
-        </div>
+      </section>
+      <div className="wd_end">
+        <p>
+          Let us help you transform your online presence and achieve real,
+          measurable results with solutions that are as unique as your business.
+        </p>
+        <button onClick={() => navigate("/contact")}>Contact Us</button>
+      </div>
       <Footer />
     </div>
   );
